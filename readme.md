@@ -827,7 +827,7 @@ frequency_words.txt 文件增加了一个【必须词】功能，使用 + 号
 
    **GitHub Secret 配置：**
    - 名称：`FEISHU_WEBHOOK_URL`
-   - 值：你的飞书机器人 Webhook 地址
+   - 值：你的飞书机器人 Webhook 地址(该链接开头类似 https://www.feishu.cn/flow/api/trigger-webhook/********)
    <br>
 
    有两个方案，**方案一**配置简单，**方案二**配置复杂(但是稳定推送)
