@@ -96,7 +96,7 @@ notification:
   #   - 只想在工作日白天接收推送（如 09:00-18:00）
   #   - 希望在晚上固定时间收到汇总（如 20:00-22:00）
   push_window:
-    enabled: false  # 是否启用推送时间窗口控制，默认关闭
+    enabled: true  # 是否启用推送时间窗口控制，默认关闭
     # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
@@ -137,7 +137,7 @@ notification:
   #   • Email already supports multiple recipients (comma-separated), unchanged
   #
   webhooks:
-    feishu_url: "" # 飞书机器人的 webhook URL（多账号用 ; 分隔）
+    feishu_url: "https://www.feishu.cn/flow/api/trigger-webhook/5d0d8def627f37b21ddc0de295f7c808" # 飞书机器人的 webhook URL（多账号用 ; 分隔）
     dingtalk_url: "" # 钉钉机器人的 webhook URL（多账号用 ; 分隔）
     wework_url: "" # 企业微信机器人的 webhook URL（多账号用 ; 分隔）
     wework_msg_type: "markdown" # 企业微信消息类型：markdown(群机器人) 或 text(个人微信应用)
